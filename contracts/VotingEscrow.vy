@@ -99,13 +99,13 @@ slope_changes: public(HashMap[uint256, int128])  # time -> signed slope change
 future_smart_wallet_checker: public(address)
 smart_wallet_checker: public(address)
 
-#_name Advanced Voting Escrowed QI
-#_symbol aveQI
+#_name Voting Escrowed NFTE
+#_symbol xNFTE
 @external
 def __init__(token_addr: address, _name: String[64], _symbol: String[32], _authorizer_adaptor: address):
     """
     @notice Contract constructor
-    @param token_addr 80/20 BAL-WETH BPT token address
+    @param token_addr 80/20 NFTE/CSP-BPT token address
     @param _name Token name
     @param _symbol Token symbol
     @param _authorizer_adaptor `AuthorizerAdaptor` contract address
